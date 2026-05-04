@@ -32,16 +32,25 @@
   }
 
   /* ── HERO (stap 0 landing) ─────────────────────────────────── */
+#heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
   #heroSection {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: hidden;
+    min-height: 100svh;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
+}
 
   .hero-img {
     position: absolute;
